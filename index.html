@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google-site-verification" content="2iNEdcQA0oe6NT_A3_e5FpvBrM7gg6vrgxftmFzz53w" />
 <title>Dave Jennings School of Surf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
 <style>
 
   :root {
@@ -183,6 +184,96 @@
   .meet h3 { color: var(--red); font-size: 1.3rem; margin-bottom: 8px; }
   .meet p { margin: 8px 0; font-size: .95rem; }
   @media (prefers-color-scheme: dark) { .meet { background: #12333b; } }
+
+  /* ===== Design pass: readability + identity ===== */
+  :root {
+    --sea: #0b4a57;        /* deep Indian Ocean */
+    --sea-deep: #06323b;
+    --foam: #f7fbfb;       /* page background */
+    --shallows: #e3f1f0;   /* tinted panels */
+    --buoy: #ffc93c;       /* lifeguard yellow accent */
+    --ink: #10242a;
+    --muted: #4a6168;
+    --red: #ffc93c; --navy: #0b4a57; --navy-dark: #06323b; --sand: #e3f1f0;
+  }
+  body { font-family: 'Atkinson Hyperlegible', 'Segoe UI', Arial, sans-serif; font-size: 18px; line-height: 1.65; background: var(--foam); color: var(--ink); }
+  h1, h2, h3, nav .brand { font-family: 'Bricolage Grotesque', 'Segoe UI', sans-serif; letter-spacing: -.01em; }
+
+  nav { padding: 12px 5%; flex-wrap: nowrap; gap: 12px; }
+  nav .brand { font-size: 1.05rem; font-weight: 700; }
+  nav .links a { font-size: .95rem; }
+  nav .cta { background: var(--buoy); color: var(--ink); font-weight: 700; border-radius: 6px; padding: 9px 16px; }
+  @media (max-width: 780px) { nav { flex-wrap: wrap; } nav .brand { flex: 1; font-size: .98rem; } nav .cta { order: 2; } .hamburger { order: 3; } }
+
+  header.hero h1 { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(2.6rem, 8vw, 5rem); line-height: 1; letter-spacing: -.03em; max-width: 12ch; margin: 12px auto; }
+  header.hero .eyebrow { text-transform: none; letter-spacing: .02em; font-size: 1rem; color: var(--buoy); }
+  header.hero p { font-size: 1.15rem; line-height: 1.6; max-width: 34ch; }
+  .btn { background: var(--buoy); color: var(--ink); border-radius: 8px; box-shadow: 0 6px 0 #d9a21f; font-size: 1.05rem; }
+  .btn:hover { transform: translateY(2px); box-shadow: 0 4px 0 #d9a21f; }
+  .btn.alt { background: white; color: var(--sea); box-shadow: 0 6px 0 #b9d4d6; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--buoy); outline-offset: 3px; }
+
+  section { padding: 72px 5%; }
+  section h2 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); font-weight: 800; color: var(--sea); line-height: 1.1; margin-bottom: 12px; }
+  section .lede { color: var(--muted); font-size: 1.08rem; max-width: 60ch; }
+  .story p { max-width: 64ch; text-align: left; color: var(--ink); }
+
+  .badges { background: var(--shallows); }
+  .badge { box-shadow: none; border: 1px solid #c9e0df; }
+  .camps-banner { background: var(--sea-deep); color: #e6f3f2; }
+  .camps-banner b { color: var(--buoy); text-decoration: none; }
+
+  .price { box-shadow: none; border: 2px solid var(--shallows); border-radius: 10px; }
+  .price strong { color: var(--sea); font-family: 'Bricolage Grotesque', sans-serif; font-size: 2rem; }
+  .discounts { background: var(--shallows); color: var(--ink); border-radius: 10px; }
+  .discounts b { color: var(--sea); }
+
+  .gallery { background: var(--sea-deep); max-width: none; }
+  .gallery > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+  .gallery .lede { color: #bcd9dc; }
+
+  .coach { box-shadow: none; border: 1px solid #d5e7e6; border-radius: 12px; }
+  .coach img { width: 100%; height: 320px; }
+  .coach h3 { color: var(--sea); font-size: 1.6rem; }
+  .coach .role { color: var(--muted); }
+  .coach p, .coach ul { font-size: 1rem; }
+  .coach .parents { background: var(--shallows); border-left: 4px solid var(--buoy); border-radius: 6px; }
+
+  .testimonials { background: var(--shallows); max-width: none; }
+  .testimonials > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+  .t-card { box-shadow: none; border-radius: 10px; border-top: 4px solid var(--buoy); }
+  .t-card p.quote { font-style: normal; font-size: 1rem; line-height: 1.65; }
+  .t-card .stars { color: #e0a800; }
+
+  .reviews .stars-big { color: #e0a800; }
+  .reviews a.gbtn { border-color: var(--sea); color: var(--sea); }
+
+  details.faq-item { box-shadow: none; border: 1px solid #d5e7e6; border-radius: 8px; }
+  details.faq-item summary { font-size: 1.05rem; color: var(--sea); }
+  details.faq-item summary:after { color: var(--sea); }
+  details.faq-item p { font-size: 1rem; color: var(--ink); }
+  details.more summary { color: var(--sea); text-decoration: underline; }
+
+  .why { background: white; }
+  .why-grid div { background: var(--shallows); border-radius: 10px; font-weight: 700; color: var(--sea); }
+  .meet { background: var(--shallows); border-radius: 10px; }
+  .meet h3 { color: var(--sea); font-size: 1.5rem; }
+
+  #contact { background: var(--sea); border-radius: 14px; }
+  .contact-nums b { color: var(--buoy); text-transform: none; letter-spacing: 0; font-size: .95rem; }
+  .contact-nums div { font-size: 1.25rem; font-weight: 700; color: white; }
+  footer { background: var(--sea-deep); }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #0a1c21; color: #e4f0f1; }
+    section h2, .coach h3, .meet h3, details.faq-item summary, .why-grid div, .price strong { color: #8fd3d6; }
+    .story p, details.faq-item p, .t-card p.quote { color: #e4f0f1; }
+    section .lede, .coach .role { color: #a9c4c8; }
+    .badges, .testimonials, .discounts, .why-grid div, .meet, .coach .parents { background: #102e35; color: #e4f0f1; }
+    .t-card, .coach, .price, details.faq-item, .why, .reviews, .badge { background: #12333b; border-color: #1d4a53; color: #e4f0f1; }
+    .badge { color: #e4f0f1; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
 </style>
 </head>
 <body>
