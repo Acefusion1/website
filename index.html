@@ -5,6 +5,12 @@
 <meta name="google-site-verification" content="BvQyA3vJQoYfWn0yKjTivoS5bClMzAgbloep-Kzs-XY" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="google-site-verification" content="2iNEdcQA0oe6NT_A3_e5FpvBrM7gg6vrgxftmFzz53w" />
+<meta name="description" content="Surf lessons on Durban beaches with SSA-qualified coaches Dave Jennings and Clive Greenstone. Kids, adults, adaptive surfing, parties and groups.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dave Jennings School of Surf">
+<meta property="og:description" content="Surf lessons on Durban beaches with SSA-qualified coaches Dave Jennings and Clive Greenstone. Kids, adults, adaptive surfing, parties and groups.">
+<meta property="og:image" content="https://durbansurfingschool.netlify.app/images/og-surf.jpg">
+<meta property="og:url" content="https://durbansurfingschool.netlify.app/">
 <title>Dave Jennings School of Surf</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap" rel="stylesheet">
 <style>
@@ -279,6 +285,23 @@
     .price span { color: #a9c4c8; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
+  .price-note { text-align: center; color: var(--muted); font-size: .95rem; max-width: 60ch; margin: 18px auto 0; }
+  .more-wrap { text-align: center; margin-top: 26px; }
+  .more-btn { font: inherit; font-weight: 700; color: var(--sea); background: white; border: 2px solid var(--sea); border-radius: 8px; padding: 10px 22px; cursor: pointer; }
+  .quote-card { width: 320px; max-width: 100%; }
+  .quote-card p { margin: 6px 0 4px; }
+  .quote-card .btn { margin-top: 12px; }
+  .contact-nums a { color: white; text-decoration: none; border-bottom: 2px solid var(--buoy); }
+  .contact-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .contact-btns .btn { margin-top: 10px; }
+  footer p { margin-top: 8px; }
+  footer a { color: white; }
+  details.faq-item p a { color: var(--sea); font-weight: 700; }
+  @media (prefers-color-scheme: dark) {
+    .more-btn { background: transparent; color: #e4f0f1; border-color: #8fd3d6; }
+    details.faq-item p a { color: #8fd3d6; }
+    .quote-card p { color: #e4f0f1; }
+  }
 </style>
 </head>
 <body>
@@ -289,12 +312,8 @@
   <div class="links">
     <a href="#lessons">Lessons</a>
     <a href="#coaches">Coaches</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#story">Our Story</a>
-    <a href="#adaptive">Adaptive Surfing</a>
-    <a href="#parties">Parties &amp; Groups</a>
+    <a href="#testimonials">Reviews</a>
     <a href="#faq">FAQ</a>
-    <a href="#why">Why Us</a>
   </div>
   <a href="#contact" class="cta">Book Now</a>
 </nav>
@@ -323,8 +342,10 @@
   <div class="prices">
     <div class="price"><h3>One-on-One</h3><strong>R350</strong><span>per lesson</span></div>
     <div class="price"><h3>2+ Students</h3><strong>R300</strong><span>each, per lesson</span></div>
-    <div class="price"><h3>5 Session Package</h3><strong>R1150</strong><span>save on 5 lessons</span></div>
+    <div class="price"><h3>5 Session Package</h3><strong>R1150</strong><span>R230 per lesson</span></div>
   </div>
+
+  <p class="price-note">Lesson duration, equipment and package details will be confirmed with you via WhatsApp.</p>
 
   <div class="discounts">
     <b>Discounts available</b> on Schools &middot; Groups &middot; Team Building &middot; Parties
@@ -412,48 +433,31 @@
       <p class="quote">&ldquo;As a complete beginner from Japan with limited English, I started surfing with Dave and have improved so much over time. He always explains things clearly and patiently, gives thoughtful feedback, and encourages me with lots of praise. Clive has also been a great help. Every lesson is so much fun, and now I just can&rsquo;t stop going surfing! 🏄&zwj;♀️ I&rsquo;ve even progressed from a beginner board to a slightly more advanced one. I wish I could stay in South Africa and keep taking Dave&rsquo;s lessons forever! 🌊❤️&rdquo;</p>
       <div class="who">Yuki <span>&middot; Japan</span></div>
     </div>
-    <div class="t-card">
+    <div class="t-card extra" hidden>
       <div class="stars">★★★★★</div>
       <p class="quote">&ldquo;Dave is one of the very best coaches. I&rsquo;ve battled with anxiety and fear of the ocean since a very young age. You would have found me on the edge of the water in tears, full of fear of getting in! Dave&rsquo;s quiet voice, calm and patient nature helped me overcome it, as well as given me the tools to cope with any future scary moments that the sea can often give us. If you are a beginner or nervous of the ocean, I&rsquo;d without a doubt highly recommend Dave!&rdquo;</p>
       <div class="who">Bronni <span>&middot; Ballito</span></div>
     </div>
-    <div class="t-card">
-      <div class="stars">★★★★★</div>
-      <p class="quote">&ldquo;Dave didn&rsquo;t just teach me how to surf, he gave me the surf stoke&hellip; and now I&rsquo;m completely hooked! Thank you Dave for your patience, belief and for helping me discover a passion that I know I&rsquo;ll be addicted to for life. 🌊❤️&rdquo;</p>
-      <div class="who">Student</div>
-    </div>
-    <div class="t-card">
+    <div class="t-card extra" hidden>
       <div class="stars">★★★★★</div>
       <p class="quote">&ldquo;Shoooot Dave! The kids were all so stoked. I gave your info to a few of the moms as their kids were raving about surfing. Thanks for making Asia&rsquo;s day!&rdquo;</p>
       <div class="who">Parent <span>&middot; Kids&rsquo; birthday party</span></div>
     </div>
-    <div class="t-card">
+    <div class="t-card extra" hidden>
       <div class="stars">★★★★★</div>
       <p class="quote">&ldquo;I started surfing with Dave and Clive 9 months ago, what a great life decision it has turned out to be. The lessons are the absolute highlight of my week, and the most fun I&rsquo;ve had this decade. Join us!&rdquo;</p>
       <div class="who">Debra <span>&middot; 54</span></div>
     </div>
   </div>
+  <p class="more-wrap"><button type="button" class="more-btn" aria-expanded="false">Show more reviews</button></p>
 </section>
 
-<section class="reviews">
-  <h2>What People Are Saying</h2>
-  <div class="stars-big">★★★★★</div>
-  <div class="rating-line">4.9 out of 5</div>
-  <p class="lede">Based on Google reviews.</p>
-  <a class="gbtn" href="#testimonials">Read Testimonials</a>
-</section>
-<section class="location">
-  <h2>Where We Teach</h2>
-  <p class="addr">Durban beaches &mdash; Dave or Clive will send you the meeting spot when you book.</p>
-</section>
 <div id="story">
 <section>
   <h2>Our Story</h2>
   <div class="story">
-    <p>Dave Jennings School of Surf was founded by Dave Jennings, who brings more than 48 years of surfing experience, 37 years in the surf industry and over 30 years of coaching experience to every lesson.</p>
-    <p>Alongside Dave, coach Clive Greenstone brings more than 40 years of surfing experience and five years of sports coaching experience, with a patient and encouraging approach that helps nervous first-timers find their feet.</p>
-    <p>Between them, the coaching team holds a combined 80+ years of surfing experience &mdash; along with SSA surf coaching qualifications, South African Lifesaving Awards, and Level 2 First Aid training.</p>
-    <p>We teach surfing skills, ocean awareness, water confidence and safety in a positive and supportive environment &mdash; for complete beginners, developing young surfers, and experienced surfers looking to improve.</p>
+    <p>Dave Jennings School of Surf teaches surfing skills, ocean awareness, water confidence and safety on Durban beaches, in a positive and supportive environment.</p>
+    <p>Our SSA-qualified coaches work with complete beginners, developing young surfers and experienced surfers looking to improve.</p>
   </div>
 </section>
 
@@ -478,9 +482,8 @@
   <h2>Birthday Parties &amp; Team Building</h2>
   <p class="lede">Discounts available on schools, groups, team building and birthday parties &mdash; get the whole crew in the water together.</p>
   <div class="prices">
-    <div class="price"><h3>Group Rate</h3><strong>R300</strong><span>per person, 2+ students</span></div>
+    <div class="price quote-card"><h3>Planning a party or team event?</h3><p>WhatsApp us for a quote.</p><a class="btn" href="https://wa.me/27737245367">WhatsApp Dave</a></div>
   </div>
-  <p style="text-align:center; margin-top: 20px;"><a class="btn" href="#contact">Enquire About a Group Booking</a></p>
 </section>
 
 </div>
@@ -493,8 +496,8 @@
 <details class="faq-item"><summary>What should we bring to a lesson?</summary><p>Just yourself and a good attitude!</p></details>
 <details class="faq-item"><summary>Where do lessons take place?</summary><p>Durban beaches. Dave or Clive will send you the meeting spot when you book.</p></details>
 <details class="faq-item"><summary>What happens if the weather or waves aren't good?</summary><p>Lessons are subject to swell and weather conditions. If the weather isn&rsquo;t good, the lesson can be rescheduled.</p></details>
-<details class="faq-item"><summary>How do I book and pay?</summary><p>You can book by WhatsApping Dave (073 724 5367) or Clive (083 398 6902).</p></details>
-<details class="faq-item"><summary>Do you offer adaptive lessons?</summary><p>Yes &mdash; both coaches have adaptive surf coaching experience. See our Adaptive Surfing page for more.</p></details>
+<details class="faq-item"><summary>How do I book and pay?</summary><p>To book, WhatsApp Dave (<a href="https://wa.me/27737245367">073 724 5367</a>) or Clive (<a href="https://wa.me/27833986902">083 398 6902</a>). Payment details will be shared with you via WhatsApp once your booking is confirmed.</p></details>
+<details class="faq-item"><summary>Do you offer adaptive lessons?</summary><p>Yes &mdash; both coaches have adaptive surf coaching experience. See our <a href="#adaptive">Adaptive Surfing section</a> for more.</p></details>
 
   </div>
 </section>
@@ -510,37 +513,26 @@
     <div><span class="emoji">🤙</span>Surfing for Everyone</div>
     <div><span class="emoji">❤️</span>More Than Just Surf Lessons</div>
   </div>
-  <div class="meet-grid">
-    <div class="meet">
-      <h3>Meet Dave</h3>
-      <p>With 48 years of surfing and 30 years of coaching, Dave brings a lifetime of experience and a deep love of the ocean to every lesson. An SSA-qualified coach, former Natal Shortboard and Longboard Champion and South African Lifesaving certified, he is calm, patient and empathetic.</p>
-      <p>Dave believes surfing is about more than catching waves &mdash; it builds focus, confidence and connection, both with the ocean and with yourself.</p>
-      <p>Dave welcomes people from all walks of life and creates a space where everyone feels accepted, supported and free to learn at their own pace. His lifelong passion for the ocean is infectious, and whether you&rsquo;re stepping onto a surfboard for the first time or looking to deepen your skills, Dave is passionate about helping you discover the freedom and joy that surfing can bring.</p>
-    </div>
-    <div class="meet">
-      <h3>Meet Clive</h3>
-      <p>Clive lives for the ocean and the stoke of a good wave! With 40 years of surfing the Indian Ocean, he brings energy, experience and a huge enthusiasm for getting people into the water and onto a wave. A KZN longboard competitor, SSA-qualified coach and South African Lifesaving certified, Clive knows the ocean and loves sharing it with others.</p>
-      <p>He&rsquo;s a hands-on, supportive coach who&rsquo;ll look after you in the water, keep you laughing and help you build confidence every step of the way.</p>
-    </div>
-  </div>
 </section>
 
 
 <p class="policy-note">Lessons are subject to swell and weather conditions. If the weather isn&rsquo;t good, the lesson can be rescheduled.</p>
 <section id="contact">
   <h2>Ready to Get in the Water?</h2>
-  <p>Whether it's your child's first time on a surfboard or they're ready to take it to the next level, come learn from a team that's been riding waves for generations.</p>
+  <p>Whether it's your first time on a board or you're ready to take your surfing to the next level, come learn from a team that's been riding waves for generations.</p>
   <div class="contact-nums">
-    <div><b>WhatsApp / Call Dave</b>073 724 5367</div>
-    <div><b>WhatsApp / Call Clive</b>083 398 6902</div>
+    <div><b>WhatsApp / Call Dave</b><a href="tel:+27737245367">073 724 5367</a></div>
+    <div><b>WhatsApp / Call Clive</b><a href="tel:+27833986902">083 398 6902</a></div>
   </div>
-  <a class="btn alt" href="https://wa.me/27833986902">WhatsApp to Book</a>
+  <div class="contact-btns"><a class="btn alt" href="https://wa.me/27737245367">WhatsApp Dave</a> <a class="btn alt" href="https://wa.me/27833986902">WhatsApp Clive</a></div>
 </section>
 
 
 <footer>
   <strong>Dave Jennings School of Surf</strong>
   Learn. Surf. Grow. Enjoy the Ocean.
+  <p class="foot-nums">WhatsApp Dave: <a href="https://wa.me/27737245367">073 724 5367</a> &nbsp;|&nbsp; WhatsApp Clive: <a href="https://wa.me/27833986902">083 398 6902</a></p>
+  <p>&copy; 2026 Dave Jennings School of Surf</p>
 </footer>
 
 
@@ -553,6 +545,16 @@
       links.classList.toggle('open');
     });
   });
+  var moreBtn = document.querySelector('.more-btn');
+  if (moreBtn) {
+    moreBtn.addEventListener('click', function(){
+      var extras = document.querySelectorAll('.t-card.extra');
+      var show = moreBtn.getAttribute('aria-expanded') === 'false';
+      extras.forEach(function(c){ c.hidden = !show; });
+      moreBtn.setAttribute('aria-expanded', show ? 'true' : 'false');
+      moreBtn.textContent = show ? 'Show fewer reviews' : 'Show more reviews';
+    });
+  }
 </script>
 
 </body>
