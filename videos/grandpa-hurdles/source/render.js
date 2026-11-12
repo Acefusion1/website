@@ -9,7 +9,7 @@ const path = require('path');
   const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
   page.on('console', m => console.log('PAGE', m.text()));
   page.on('pageerror', e => console.log('PAGEERR', e.message));
-  await page.goto('file://' + path.join(__dirname, 'index.html'));
+  await page.goto('file://' + path.join(__dirname, process.env.PAGE || 'index.html'));
   await page.waitForFunction(() => window.READY, null, { timeout: 120000 });
   const mode = process.argv[2];
   if (mode === 'stills') {
